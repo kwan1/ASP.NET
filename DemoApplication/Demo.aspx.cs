@@ -13,5 +13,28 @@ namespace DemoApplication
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Write(textname.Text + "</br>");
+
+            Response.Write(lstLocation.SelectedItem.Text + "</br>");
+
+            IDName.Visible = false;
+            textname.Visible = false;
+            lstLocation.Visible = false;
+            chkC.Visible = false;
+            chkASP.Visible = false;
+            rdMale.Visible = false;
+            rdFemale.Visible = false;
+            btnSubmit.Visible = false;
+
+
+        }
+
+        protected void lstLocation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
