@@ -7,34 +7,34 @@ using System.Web.UI.WebControls;
 
 namespace DemoApplication
 {
-    public partial class Demo : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class Demo : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
+		}
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Write(textname.Text + "</br>");
+		protected void Button1_Click(object sender, EventArgs e)
+		{
+			Session["Name"] = textname.Text;
 
-            Response.Write(lstLocation.SelectedItem.Text + "</br>");
+			Response.Write(Session["Name"]);
 
-            IDName.Visible = false;
-            textname.Visible = false;
-            lstLocation.Visible = false;
-            chkC.Visible = false;
-            chkASP.Visible = false;
-            rdMale.Visible = false;
-            rdFemale.Visible = false;
-            btnSubmit.Visible = false;
+			IDName.Visible = false;
+			textname.Visible = false;
+			lstLocation.Visible = false;
+			chkC.Visible = false;
+			chkASP.Visible = false;
+			rdMale.Visible = false;
+			rdFemale.Visible = false;
+			btnSubmit.Visible = false;
 
 
-        }
+		}
 
-        protected void lstLocation_SelectedIndexChanged(object sender, EventArgs e)
-        {
+		protected void lstLocation_SelectedIndexChanged(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }
