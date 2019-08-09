@@ -16,7 +16,7 @@
 </head>
 <body style="font-weight: 700">
     <form id="form1" runat="server">
-        <TWebControl:WebControl ID="Header" runat="server" />
+        <TWebControl:WebControl ID="Header" runat="server" MinValue="100"/>
     <div>
 
     </div>
