@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Demo.aspx.cs" Inherits="DemoApplication.Demo" Theme="" %>
-
+<%@ Register Src="~/Guru99Control.ascx" TagName="WebControl" TagPrefix="TWebControl"%>
 <!DOCTYPE html>
 <script runat="server">
 
@@ -16,6 +16,7 @@
 </head>
 <body style="font-weight: 700">
     <form id="form1" runat="server">
+        <TWebControl:WebControl ID="Header" runat="server" />
     <div>
 
     </div>
